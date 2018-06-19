@@ -1,12 +1,16 @@
+#this program is automated facebook login using selenium
+
 #!/usr/bin/python
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
+#setting the path for geckodriver
 driver = webdriver.Firefox(executable_path= "/usr/bin/geckodriver")
 driver.get("https://www.facebook.com")
 driver.maximize_window()
 
+#username and password
 fbusername = 'username'
 fbpassword = 'password'
 
